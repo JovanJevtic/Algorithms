@@ -26,9 +26,7 @@ class Stack {
 }
   
 function palindrome(str) {
-    str = str.replace(/[^a-zA-Z0-9]/g, '');
-    str = str.replace(/\s/g, '');
-    str = str.toLowerCase();
+    str = str.replace(/[^a-zA-Z0-9]/g, '').replace(/\s/g, '').toLowerCase();
   
     const wordStorage = new Stack();
   
