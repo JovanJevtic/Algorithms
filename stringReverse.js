@@ -38,11 +38,11 @@ function palindrome(str) {
     }
   
     for (let i = 0; i < str.length; i++) {
-      reversedWord += wordStorage.pop()
+      reversedWord += wordStorage.pop();
     }
   
     if (str === reversedWord) {
-      isPalindrome = 'String is palindrome'
+      isPalindrome = 'String is palindrome';
     }
   
     return {isPalindrome, reversedWord};
@@ -50,7 +50,7 @@ function palindrome(str) {
   
 //? Testing 
 
-console.log(palindrome('Palindrome'))
+console.log(palindrome('Da li je ovo palindrome'))
 console.log(palindrome("A man, a plan, a canal. Panama"))
 console.log(palindrome("never odd or even"))
 console.log(palindrome("not a palindrome"))
