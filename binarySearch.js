@@ -1,22 +1,22 @@
-const search = (arr, target) => {
-    let left = 0
-    let right = arr.length - 1
-
-    while(left <= right) {
-        mid = (left + right) / 2
-        if (arr[mid] == target) {
-            return mid
-        } else if (target < arr[mid]) {
-            right = mid -1
-        }   else {
-            left = mid + 1
-        }
-    }
-
+const binarySearch = (array, low, high, target) => {
+  if(low > high) {
     return -1
+  }
+
+  //calculate the midpoint of array
+  let mid = Math.floor( (low+ high) / 2)
+
+  if (target == array[mid]) {
+    console.log('Target is found at index: ', mid)
+    return mid;
+  } 
+  
+  else if (target < array[mid]) {
+    return binarySearch(array, low, mid-1, target);
+  }
+  else {
+    return binarySearch(array, mid+1, high, target);
+  }
 }
-
-const arr = [ -3, -1, 1, 2, 4, 5, 7, 9, 12, 14, 15 ]
-const target = 15;
-
-console.log(search(arr, target))
+// To test:
+console.log(binarySearch([1,5,7,8,9,10,15], 0, 6, 5))
