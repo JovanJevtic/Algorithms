@@ -1,5 +1,5 @@
 const longestCommonPrefix = (strs) => {
-    if (strs === 0) return ""                                                                                                                                                                       
+    if (strs.len === 0) return ""                                                                                                                                                                       
     
     const str = strs[0]
     
