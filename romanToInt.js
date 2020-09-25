@@ -18,6 +18,9 @@ const romanToInt = s => {
   
       i--
     }
-  
     return result
 };
+
+//* Testing
+let result = romanToInt(123)
+console.log(result)
