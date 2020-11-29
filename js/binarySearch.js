@@ -22,11 +22,10 @@ const binarySearch = (array, low, high, target) => {
 }
 
 // ?Testing:
-
 const testArr = [1, 3, 4, 7, 8, 12, 18, 21, 75, 32]
-const target = 12
+const target = 21
 
 const start = 0
-const end = 5
+const end = testArr.length 
 
 console.log(binarySearch(testArr, start, end, target))

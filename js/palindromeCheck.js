@@ -8,7 +8,7 @@ class Stack {
     push(value) {
       this.items[this.count] = value
       this.count++
-      console.log(`${value} added to position ${this.count}`)
+      //console.log(`${value} added to position ${this.count}`)
       return this.count - 1
     }
   
@@ -50,7 +50,7 @@ function palindrome(str) {
   
 //? Testing 
 
-console.log(palindrome('Da li je ovo palindrome'))
+//console.log(palindrome('Da li je ovo palindrome'))
 console.log(palindrome("A man, a plan, a canal. Panama"))
-console.log(palindrome("never odd or even"))
-console.log(palindrome("not a palindrome"))
+//console.log(palindrome("never odd or even"))
+//console.log(palindrome("not a palindrome"))
